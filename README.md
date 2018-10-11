@@ -1,7 +1,25 @@
-# hellospringannotacion
+# redis
 
-Hello all 
+To run this example using Java main method you need to install Redis
+1. Download and unzip Redis from their website
+2. Build Redis
+3. Start Redis
 
-In this project you will learn how to use Spring Annotation to define Spring bean.
+You can run the following commands:
 
-You also learn how to create bean using Annotation.
+wget http://download.redis.io/redis-stable.tar.gz
+tar xvzf redis-stable.tar.gz
+cd redis-stable
+make
+
+To start Redis:
+$redis-server
+
+To check if Redis is running:
+$redis-cli                                                                
+redis 127.0.0.1:6379> ping
+PONG
+redis 127.0.0.1:6379> set mykey somevalue
+OK
+redis 127.0.0.1:6379> get mykey
+"somevalue"
